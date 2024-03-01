@@ -1,0 +1,318 @@
+/* Estilo general */
+body {
+    background-color: #000;
+    color: #f0eee8;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+h2{
+    color:#000; 
+}
+
+
+/* Tipografía informal */
+body h3,h2, p {
+    font-family: 'Agbalumo', serif;
+    
+}
+.texto{
+    color: #0a0a0a;
+    list-style: none;
+    font-family: 'Agbalumo', serif;
+}
+.texto li {
+    margin-bottom: 12px; /* Puedes ajustar el espacio entre elementos según tus preferencias */
+  }
+
+ 
+/* Menú */
+.menu {
+    display: flex;
+    background-color: #a18594;
+    list-style: none;
+    padding: 4px;
+    margin: 3px;
+    justify-content: flex-end;
+}
+.menu li {
+    margin-left: 20px;
+    position: relative;
+}
+
+.menu a {
+    text-decoration:none;
+    color: #ffffff;
+    transition: color 0.3s;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+.menu a:hover {
+    color: #a18594;
+}
+
+/* Encabezado */
+/* Ajuste para el logo en el primer nav del encabezado */
+header nav:first-child {
+    display: flex; /* Utiliza flexbox para el primer nav */
+    align-items: center; /* Alinea verticalmente los elementos */
+    justify-content: center;
+}
+
+header nav:first-child img.logobonhomia {
+        max-width: 150px; /* Cambia el tamaño máximo del logo */
+        width: 100%; /* Hace que el logo se ajuste al contenedor */
+        height: auto; /* Altura automática para mantener la proporción */
+        display: block;
+        border-radius: 0%;
+        object-fit: cover;
+}
+
+
+/* Sección "Sobre Nosotros" */
+
+/* Pie de Página */
+#pie-de-pagina {
+    background-color: #b64d85e1;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    opacity: 0.8;
+}
+#barra
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+.barra_h2
+{
+    display:block;
+}
+/* Estilo para los divs de bebida */
+.bebida {
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 0 29px #03fdff;
+    color: #000000;
+    padding: 8px;
+    text-align: center;
+    margin: 30px;
+}
+#barra .bebida:hover{
+    transform: scale(1.1);
+}
+.bebida img {
+    height: 350px;
+    width: 300px;
+    object-fit: cover;
+    box-shadow: 0 0 15px #760ab7;
+}
+
+/*Diseño de menu desplegable*/
+
+header {
+    display: flex; /* Cambia a un modelo de caja flexible */
+    align-items: center; /* Alinea verticalmente los elementos */
+    justify-content: space-between; /* Distribuye los elementos horizontalmente */
+    background-color: rgb(159, 97, 179) ;
+    color: #000000;
+    padding: 5px;
+}
+.logo {
+    max-width: 100px;
+    width: auto;
+    height: auto;
+    border-radius: 0%;
+    object-fit: cover;
+
+}
+nav {
+    text-align: left;
+    
+}
+ttttt
+
+/* Menú */
+.menu {
+    display: flex;
+    list-style: none;
+    margin: 0;
+}
+
+.menu li {
+    margin-right: 20px;
+    position: relative;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #ffffff;
+    transition: color 0.3s;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 10px;
+    display: block;
+}
+
+.menu a:hover {
+    color: #a18594;
+}
+
+/* Submenús */
+.menu ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #a18594;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.menu li:hover > ul {
+    display: block;
+}
+
+.menu ul li {
+    margin: 0;
+}
+
+.menu ul a {
+    color: #ffffff;
+    padding: 5px;
+}
+
+ttttt
+/*Diseño de galeria de eventos*/
+
+.slider-box{
+    width: 100%;
+    height: auto;
+    margin: 10px auto 0;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.slider-box ul{
+    display: flex;
+    padding: 0;
+    width: 600%;
+    animation: slide 10s infinite linear;
+}
+
+.slider-box li {
+    width: 5%;
+    list-style: none;
+    position: relative;
+    margin-right: 5px;
+}
+
+.slider-box img {
+    width: 100%;
+    box-shadow: 0 0 60px #efb810;
+    border-radius: 5px;
+   
+}
+
+@keyframes slide {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-3.5%); }
+    100% { transform: translateX(0); }
+  }
+
+
+  /*estilos del formulario*/
+
+  form {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+form input {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+}
+
+form button {
+    width: 100%;
+    background-color: #efa94a;
+    color: white;
+    padding: 10px 15px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #efa94a;
+}
+
+
+
+/* Estilo del botón para el enlace al index.html */
+a.boton-inicio {
+    display: inline-block;
+    padding: 10px 20px; /* Espaciado interno del botón */
+    margin: 10px; /* Margen exterior del botón */
+    background-color: #efa94a; /* Color de fondo del botón */
+    color: #fff; /* Color del texto */
+    text-decoration: none; /* Eliminar subrayado del enlace */
+    border-radius: 5px; /* Borde redondeado */
+    transition: background-color 0.3s; /* Transición al pasar el cursor */
+  }
+  
+  a.boton-inicio:hover {
+    background-color: #efa94a; /* Cambio de color al pasar el cursor */
+  }
+  
+  /*botones de compra*/
+  a.boton-compra {
+    display: inline-block;
+    padding: 10px 20px; /* Espaciado interno del botón */
+    margin: 10px; /* Margen exterior del botón */
+    background-color: #e770a8; /* Color de fondo del botón */
+    color: #fff; /* Color del texto */
+    text-decoration: none; /* Eliminar subrayado del enlace */
+    border-radius: 5px; /* Borde redondeado */
+    transition: background-color 0.8s; /* Transición al pasar el cursor */
+  }
+  
+  a.boton-compra:hover {
+    background-color: #50ef4a; /* Cambio de color al pasar el cursor */
+  }
+
+   /* imagen del boton compra */
+   .boton-compra {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.boton-compra img {
+    width: 50px; /* Ajusta el tamaño de la imagen según tus preferencias */
+    height: auto;
+    margin-left: 10px; /* Ajusta el margen izquierdo según tus preferencias */
+    border-radius: 50%; /* Hace que la imagen sea circular, ajusta según tus preferencias */
+}
+
+.contenedor-boton {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0%; /* Ajusta según sea necesario */
+}
+
+.contenedor-boton span {
+    margin-right: 5%; /* Ajusta según sea necesario */
+}
